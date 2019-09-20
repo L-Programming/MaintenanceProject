@@ -1,0 +1,17 @@
+<div class=".check_user">
+
+        <div class="jumbotron text-center">
+                <h1>Maintenance System</h1>
+                <p>Fun Park Biograd</p> 
+              </div>
+            
+          <div class="col-xs-6 col-md-3"> <button routerLink="/admin" type="button" class="btn btn-primary btn-lg center-block ">Povratak</button></div>
+            
+          <tr *ngFor="let Users of Users">
+  
+            <p>{{Users.Ime}}</p> 
+            <input class="btn" type="button" value="Delete" (click)="deleteUser(Users.id)">
+               
+              </tr>
+
+</div>

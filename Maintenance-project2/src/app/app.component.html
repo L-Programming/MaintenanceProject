@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div >
+                <alert></alert>
+                <router-outlet></router-outlet>
+</div>
+<div>
+    <p class="text-center fixed-bottom">Copyright 2019</p>
+</div>
+
+
+  
+
